@@ -2,12 +2,13 @@
   "manifest_version": 2,
 
   "name": "TIL New Tab",
-  "description": "This extension replaces your new tab page with an image pulled from /r/EarthPorn and a TIL pulled from /r/todayilearned overlayed",
+  "description": "This extension replaces your new tab page with an image pulled from reddit.com/r/EarthPorn and a Today I Learned fact pulled from reddit.com/r/todayilearned overlayed.",
   "version": "1.0",
   "author": "Josh Chorlton",
 
   "permissions": [
-    "https://til-newtab.appspot.com/get_random_img"
+    "https://til-newtab.appspot.com/get_random_img",
+    "https://til-newtab.appspot.com/get_random_til"
   ],
   "chrome_url_overrides": {
     "newtab": "index.html"

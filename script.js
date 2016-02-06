@@ -11,3 +11,10 @@ function httpGetAsync(theUrl, callback) {
 httpGetAsync("https://til-newtab.appspot.com/get_random_img", function(resp) {
 	document.getElementById("bg").src = JSON.parse(resp).url;
 });
+
+httpGetAsync("https://til-newtab.appspot.com/get_random_til", function(resp) {
+	document.getElementById("link").innerHTML = JSON.parse(resp).title;
+	document.getElementById("link").href = JSON.parse(resp).url;
+	document.getElementById("comments").href = JSON.parse(resp).permalink;
+	document.getElementById("container").style.display = "flex";
+});
